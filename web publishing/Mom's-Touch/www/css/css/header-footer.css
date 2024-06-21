@@ -1,0 +1,214 @@
+body {
+    background-color: #ffecce;
+    font-family: 'NanumSquareRound';
+    font-size: 17px;
+}
+
+.inner {
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* h2.title 공통 */
+.title {
+    text-align: center;
+    color: #ffc908;
+    font-size: 2.3em;
+    margin: 100px 0 60px 0;
+}
+
+/* header */
+header {
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+.header-wrap {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav>li>a {
+    font-weight: bold;
+}
+
+#nav>li>a:hover {
+    color: #f2a900;
+}
+
+.sns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-logo {
+    flex: 1;
+    display: flex;
+    justify-items: center;
+    gap: 50px;
+    line-height: 80px;
+}
+
+.btn-logo>.ham-btn img {
+    width: 40px;
+    height: 34px;
+}
+
+/* 햄버거메뉴 */
+.btn-logo #menu {
+    display: flex;
+    gap: 50px;
+}
+
+.gnb-menu {
+    /* display: none; */
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 320px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    background: #74685c;
+    /* opacity: 0.9; */
+    
+}
+
+.gnb-menu>.ham-logo{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.gnb-menu>.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.gnb-menu>.gnb-border{
+    overflow-y: scroll;
+    width: 110%;
+    height: 90%;
+    /* border: 1px solid red; */
+}
+
+#menu>li {
+    line-height: 3.8;
+    text-indent: 80px;
+    display: block;
+    position: relative;
+    top: 70px;
+}
+
+#menu>li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+#menu>li>a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+    background: url(../images/right.png) no-repeat;
+    background-position: 90% center;
+    color: white;
+}
+
+#menu>li>a:hover{
+    color: #ffecce;
+}
+
+#menu>li>a.active {
+    background-image: url(../images/down-arrow.png);
+}
+
+#menu .sub {
+    display: none;
+    width: 100%;
+    background: #ffecce;
+    line-height: 3;
+    text-indent: 100px;
+    text-align: start;
+}
+
+#menu .sub>li>a:hover{
+    color: #74685c;
+}
+
+.gnb-menu>.close{
+    display: block;
+    top: 15px;
+}
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    line-height: 2.5;
+    padding: 100px 0;
+    background-color: #74685c;
+    color: #d7d2cb !important;
+}
+
+
+.foot-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.foot-menu>li {
+    position: relative;
+    padding: 30px 12px;
+}
+
+.foot-menu>li>a {
+    color: #d7d2cb;
+}
+
+/* 세로 줄 */
+
+.foot-menu>li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 13px;
+    background-color: #d7d2cb;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.foot-menu>li:last-child::after {
+    display: none;
+}
+
+.foot-sns {
+    display: flex;
+    justify-content: center;
+}
+
+/* aside */
+aside {
+    position: fixed;
+    right: 20px;
+    top: 700px;
+}
+
+.quick-wrap>.top img {
+    display: block;
+    margin: 0 auto;
+}
