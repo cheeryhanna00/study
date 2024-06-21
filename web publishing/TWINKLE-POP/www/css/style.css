@@ -1,0 +1,846 @@
+/* common */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #424242;
+    text-decoration: none;
+}
+
+img,
+video {
+    vertical-align: middle;
+}
+
+address,
+i,
+em {
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    color: #424242;
+    line-height: 1;
+    width: 100%;
+    background-color: rgba(254, 233, 223, 0.35);
+    font-size: 16px;
+}
+
+.inner {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.blind {
+    display: none;
+}
+
+
+/* style */
+/* header */
+header {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+}
+
+.head {
+    width: 1600px;
+    display: flex;
+    margin: 0 auto;
+    color: rgb(237, 166, 151);
+    justify-content: space-between;
+    line-height: 70px;
+}
+
+.head .logo img {
+    height: 60px;
+}
+
+.head a {
+    color: rgb(237, 166, 151);
+}
+
+.head .l_header a {
+    color: rgb(237, 166, 151);
+}
+
+.head .l_header .shop,
+.head .r_header,
+.lang,
+.icon,
+.user {
+    display: flex;
+}
+
+.head .l_header p,
+.head .r_header img,
+.head .r_header .lang {
+    padding: 0 10px;
+}
+
+.head .l_header>.shop p:hover a,
+.head .l_header>.shop li:hover a,
+.head .r_header li:hover a {
+    color: #999999;
+}
+
+.head .l_header .m {
+    position: absolute;
+    z-index: 100;
+    width: 50vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: left;
+}
+
+.head .l_header .m-x img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+
+.community>ul {
+    display: none;
+    position: absolute;
+    width: 100px;
+    padding: 10px 0;
+    top: 60px;
+    line-height: 2;
+    text-align: center;
+    border: 1px solid rgb(237, 166, 151);
+    background: #fef4ef;
+    margin: 0 5px;
+}
+
+.user>ul {
+    display: none;
+    position: absolute;
+    width: 100px;
+    padding: 10px 0;
+    top: 60px;
+    line-height: 2;
+    text-align: center;
+    border: 1px solid rgb(237, 166, 151);
+    background: #fef4ef;
+    margin: 0 -30px;
+}
+
+.lang {
+    margin-right: 10px;
+}
+
+.icon img {
+    width: 24px;
+}
+
+
+
+/* main-banner */
+.main-banner {
+    overflow: hidden;
+}
+
+.main-banner img {
+    width: 100vw;
+}
+
+.m-banner {
+
+    width: 100%;
+    display: flex;
+}
+
+/* .pager {
+    top: 42vw;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+/* .pager li a {
+    display: block;
+    width: 100px;
+    height: 4px;
+    border-radius: 15px;
+    background: #fef4ef;
+}
+
+.pager>.active>a {
+    background: #cc7f78;
+} */
+
+
+
+/* best-seller */
+.best-seller {
+    margin-top: 80px;
+    position: relative;
+}
+
+.best-seller>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    line-height: 120px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.best-seller .item,
+.best-seller .item ul {
+    display: flex;
+    justify-content: center;
+}
+
+.best-seller .item .text {
+    position: absolute;
+    top: 17vw;
+    letter-spacing: -1px;
+    /* font-size: 20px; */
+    font-size: 1.1em;
+    font-weight: 400;
+    width: 15vw;
+}
+
+.best-seller .item .text>p {
+    margin-left: 1vw;
+}
+
+.best-seller .item-01,
+.best-seller .item-02,
+.best-seller .item-03,
+.best-seller .item-04,
+.best-seller .item-05 {
+    position: relative;
+    height: 31vw;
+    /* height: 510px; */
+    width: 15.7vw;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.best-seller .item img {
+    height: 15.7vw;
+}
+
+.best-seller .item-01 .event,
+.best-seller .item-02 .text>strong,
+.best-seller .item-03 .text>strong:last-child,
+.best-seller .item-04 .text>strong {
+    position: absolute;
+    top: 10vw;
+    right: 0.5vw;
+}
+
+.best-seller .item-01 .text>strong,
+.best-seller .item-02 .price,
+.best-seller .item-03 .text>strong:nth-child(2),
+.best-seller .item-04 .price,
+.best-seller .item-05 .price {
+    margin-left: 20px;
+    line-height: 45px;
+}
+
+.best-seller .item-01 .event>strong:first-child {
+    color: #6c6c6c;
+    border: solid 2px;
+    padding: 1px 8px;
+}
+
+.best-seller .item-01 .event>strong:nth-child(2) {
+    color: #ffc1b5;
+    border: solid 2px;
+    padding: 1px 8px;
+}
+
+.best-seller .item-02 .price strong:nth-child(2),
+.best-seller .item-04 .price strong:nth-child(2),
+.best-seller .item-05 .price strong:nth-child(2) {
+    margin-right: 0.78vw;
+    font-size: 1em;
+    color: #c6c6c6;
+    text-decoration-line: line-through;
+}
+
+.best-seller .item-02 .price strong:last-child,
+.best-seller .item-04 .price strong:last-child,
+.best-seller .item-05 .price strong:last-child {
+    color: #ffc1b5;
+    font-weight: 600;
+}
+
+.best-seller .item-02 .text>strong,
+.best-seller .item-04 .text>strong {
+    position: absolute;
+    /* right: 0.5vw; */
+    color: white;
+    background-color: rgb(255, 193, 181);
+    font-size: 1em;
+    padding: 7px 16px;
+    border-radius: 30px;
+}
+
+.best-seller .item-03 .text>strong:last-child {
+    color: #ffc1b5;
+    border: solid 2px;
+    padding: 3px 8px;
+}
+
+.best-seller .item-04 .text>p,
+.best-seller .item-05 .text>p {
+    /* line-height: 25px; */
+    line-height: 1.7vw;
+}
+
+
+/* MD */
+.MD {
+    margin-top: 9.5vw;
+    padding-bottom: 8vw;
+    background-color: white;
+    width: 100%;
+}
+
+.MD>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    line-height: 6.25vw;
+    font-weight: 300;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+}
+.MD>div{
+    display: flex;
+}
+.MD-pick {
+    padding: 0 4vw;
+    /* background-color: yellow; */
+}
+
+.MD .MD-pick>a {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.MD .MD-pick>a>img {
+    height: 43vw;
+}
+
+.MD .md-right {
+    margin-left: 2vw;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+}
+
+.MD .md-right>.text {
+    margin-bottom: 1.6vw;
+}
+
+.MD .md-right>.text p:nth-child(2) {
+    color: #7c7c7c;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 1.6vw;
+}
+
+.MD .md-right>.text h2 {
+    color: #535353;
+    font-size: 2.88rem;
+    margin-top: 0.3vw;
+    font-weight: 600;
+}
+
+.MD .md-right>.text p:last-child {
+    color: #7c7c7c;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 1vw;
+}
+
+.MD .MD-pick .pick {
+    display: flex;
+    gap: 20px;
+}
+
+.MD .MD-pick .pick img {
+    height: 18vw;
+}
+
+.MD .MD-pick .pick .pick-01,
+.MD .MD-pick .pick .pick-02 {
+    box-shadow: 5px 5px 12px lightgrey;
+    /* height: 454px; */
+    height: 28vw;
+    background-color: white;
+}
+
+.MD .MD-pick .pick .text-box {
+    margin-left: 1vw;
+    margin-top: 1.4vw;
+}
+
+.MD .MD-pick .pick .text-box p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.MD .MD-pick .pick .text-box>p {
+    line-height: 20px;
+}
+
+.MD .MD-pick .pick .text-box .price p:first-child {
+    color: #c6c6c6;
+    text-decoration: line-through;
+}
+
+.MD .MD-pick .pick .text-box .price2>p:nth-child(2) {
+    font-size: 1.5em;
+    color: rgb(255, 193, 181);
+}
+
+.MD .MD-pick .pick .text-box>.price {
+    display: flex;
+    line-height: 60px;
+}
+
+.MD .MD-pick .pick .text-box .price2 {
+    display: flex;
+}
+
+
+
+/* all */
+.all {
+    margin-top: 80px;
+    position: relative;
+}
+
+.all>h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    line-height: 120px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.all .item,
+.all .item ul {
+    display: flex;
+    justify-content: center;
+}
+
+.all .item .text {
+    position: absolute;
+    top: 17vw;
+    letter-spacing: -1px;
+    /* font-size: 20px; */
+    font-size: 1.1em;
+    font-weight: 400;
+    width: 15vw;
+}
+
+.all .item .text>p {
+    margin-left: 1vw;
+}
+
+.all .item-01,
+.all .item-02,
+.all .item-03,
+.all .item-04,
+.all .item-05 {
+    position: relative;
+    height: 31vw;
+    /* height: 510px; */
+    width: 15.7vw;
+    background-color: white;
+    margin: 0 10px;
+}
+
+.all .item img {
+    height: 15.7vw;
+}
+
+/* 전체(8)부분 */
+.all>.text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+select {
+    width: 120px;
+    padding: 7px 10px;
+    font-family: inherit;
+    /* 폰트 상속 */
+    font-size: 0.88em;
+    color: #6c6c6c;
+    background: url(../img/d_arrow.png) no-repeat 90% 50%;
+    /* 기본 화살표 대체 */
+    background-size: 12px;
+    border: 1px solid #6c6c6c;
+    border-radius: 0px;
+    /* 둥근모서리 제거 */
+    -webkit-appearance: none;
+    /* 기본외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.all .item {
+    margin-top: 20px;
+    /* display: flex; */
+}
+
+.all .item-01 .text>strong,
+.all .item-02 .event,
+.all .item-03 .text>strong:last-child,
+.all .item-04 .text>strong {
+    position: absolute;
+    top: 10vw;
+    right: 0.5vw;
+}
+
+.all .item-01 .price,
+.all .item-02 .text>strong,
+.all .item-03 .text>strong:nth-child(2),
+.all .item-04 .price,
+.all .item-05 .price {
+    margin-left: 20px;
+    line-height: 45px;
+}
+
+.all .item-02 .event>strong:first-child {
+    color: #6c6c6c;
+    border: solid 2px;
+    padding: 1px 8px;
+}
+
+.all .item-02 .event>strong:nth-child(2) {
+    color: #ffc1b5;
+    border: solid 2px;
+    padding: 1px 8px;
+}
+
+.all .item-01 .price strong:nth-child(2),
+.all .item-04 .price strong:nth-child(2),
+.all .item-05 .price strong:nth-child(2) {
+    margin-right: 0.78vw;
+    font-size: 1em;
+    color: #c6c6c6;
+    text-decoration-line: line-through;
+}
+
+.all .item-01 .price strong:last-child,
+.all .item-04 .price strong:last-child,
+.all .item-05 .price strong:last-child {
+    color: #ffc1b5;
+    font-weight: 600;
+}
+
+.all .item-01 .text>strong,
+.all .item-04 .text>strong {
+    position: absolute;
+    /* right: 20px; */
+    color: white;
+    background-color: rgb(255, 193, 181);
+    font-size: 1em;
+    padding: 7px 16px;
+    border-radius: 30px;
+}
+
+
+
+.all .item-03 .text>strong:last-child {
+    color: #ffc1b5;
+    border: solid 2px;
+    padding: 3px 8px;
+}
+
+.all .item-04 .text>p,
+.all .item-05 .text>p {
+    /* line-height: 25px; */
+    line-height: 1.7vw;
+}
+
+/* view버튼 */
+.view {
+    position: absolute;
+    margin-top: 130px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(255, 193, 181);
+    padding: 10px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.view:hover {
+    background-color: rgb(237, 166, 151);
+    color: whitesmoke;
+}
+
+
+
+/* footer */
+footer {
+    position: relative;
+    background-color: #F8F8F8;
+    top: 480px;
+}
+
+footer .foot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot .left ul {
+    display: flex;
+    gap: 20px;
+}
+
+.foot .left .market {
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.foot .left .market a {
+    color: #6c6c6c;
+}
+
+.foot .left .introduce {
+    display: flex;
+    gap: 20px;
+}
+
+.foot .left .introduce,
+.foot .left .introduce a {
+    font-size: 0.88em;
+    color: #999999;
+    font-weight: 600;
+}
+
+.foot .left .introduce li:nth-child(2) a {
+    color: #6c6c6c;
+}
+
+.company {
+    margin-top: 25px;
+    color: #999999;
+    font-size: 0.81em;
+    line-height: 22px;
+}
+
+.company h3 {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+}
+
+.company span,
+.company span a {
+    color: #999999;
+    font-weight: 600;
+}
+
+.company span a {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+.company p:last-child {
+    margin-top: 10px;
+}
+
+.foot .right .sns {
+    display: flex;
+    gap: 20px;
+    line-height: 90px;
+}
+
+.foot .right .sns a {
+    color: #999999;
+}
+
+.foot .right .call {
+    font-size: 0.88em;
+}
+
+.foot .right .call p:first-child {
+    font-size: 1em;
+}
+
+.foot .right .call p,
+.foot .right .call a {
+    color: #999999;
+    line-height: 26px;
+}
+
+.foot .right .call span {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.foot .right .line {
+    display: block;
+    content: " ";
+    margin: 10px 0;
+    border-bottom: 1px solid #dddddd;
+    width: 250px;
+}
+
+.foot .right .brand {
+    line-height: 26px;
+}
+
+.foot .right .brand>p {
+    color: #999999;
+    font-size: 0.88em;
+    font-weight: 500;
+}
+
+.foot .right .brand>p a {
+    border: 1px solid #dddddd;
+    padding: 3px 5px;
+    font-size: 0.69em;
+    color: #999999;
+    font-weight: 600;
+}
+
+.depth3 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 14px 10px 14px 20px;
+    border: 1px solid #dddddd;
+    top: -5px;
+}
+
+.depth3 li {
+    width: 240px;
+    font-size: 0.88em;
+    color: #999999;
+}
+
+.depth3 a {
+    font-size: 0.75em;
+    color: #999999;
+}
+
+.foot .right .IR {
+    font-size: 0.88em;
+    line-height: 22px;
+    color: #999999;
+}
+
+.foot .right .IR>a {
+    font-size: 1em;
+    color: #999999;
+}
+
+.foot .right .world>p {
+    line-height: 22px;
+    font-size: 0.88em;
+    color: #999999;
+    font-weight: 500;
+}
+
+.foot .right .world>p a {
+    border: 1px solid #dddddd;
+    padding: 3px 5px;
+    font-size: 0.69em;
+    color: #999999;
+    font-weight: 600;
+}
+
+.foot .right .world .depth4 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 14px 10px 14px 18px;
+    border: 1px solid #dddddd;
+    bottom: 27px;
+}
+
+.foot .right .world .depth4 li {
+    width: 300px;
+    font-size: 0.75em;
+    color: #999999;
+    line-height: 22px;
+}
+
+.foot .right .world .depth4 li a {
+    font-size: 1em;
+    color: #999999;
+}
+
+/* footer .right .brand-list>a:hover .depth3,
+footer .right .brand-list2>a:hover .depth4 {
+    display: block;
+} 안됨 js에서 해야할듯*/
+
+
+
+/* aside */
+aside {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    text-align: right;
+}
+
+aside a {
+    display: block;
+}
+
+aside .chat-bot {
+    display: flex;
+}
+
+aside .chat-bot-img img {
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 8px;
+}
+
+aside .chat-bot {
+    text-align: right;
+    align-items: center;
+    margin-top: 8px;
+}
+
+aside .chat-bot img {
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    width: 16px;
+    padding: 5px;
+    margin-right: 3px;
+}
+
+aside .chat-bot p {
+    font-size: 0.75em;
+    font-weight: 500;
+    background-color: #e1e1e1;
+    border-radius: 50px;
+    padding: 8px 12px;
+}
