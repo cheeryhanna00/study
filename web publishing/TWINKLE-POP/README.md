@@ -19,7 +19,7 @@
 
 ### 프로젝트 실행 방법
 <ul>
-  <li>www 파일 안의 index.html을 열어 보시면 됩니다.</li>
+  <li>.zip파일을 다운받아 압축을 푼 뒤, www 파일 안의 index.html을 열어 보시면 됩니다.</li>
 </ul>
 <hr>
 
