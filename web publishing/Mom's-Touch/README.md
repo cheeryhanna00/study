@@ -1,7 +1,7 @@
 # Mom's-Touch web publishing
 ### Mom's Touch 사이트를 좀 더 깔끔하게 디자인하여 상품에 집중할 수 있도록 제작하였습니다.
 <br/>
-### 개발 언어 및 도구
+###개발 언어 및 도구
 <ul>
   <li>사용 언어 : HTML5, CSS3</li>
   <li>사용 라이브러리 : jQuery</li>
