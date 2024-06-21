@@ -1,0 +1,168 @@
+body {
+    background-color: #ffecce;
+    font-family: 'NanumSquareRound';
+}
+
+.inner{
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* h2.title 공통 */
+.title {
+    text-align: center;
+    color: #ffc908;
+    font-size: 40px;
+    margin: 100px 0 60px 0;
+}
+
+/* header */
+header {
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+}
+
+.header-wrap {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav>li>a {
+    font-weight: bold;
+}
+
+#nav>li>a:hover {
+    color: #f2a900;
+}
+
+.sns {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-logo {
+    flex: 1;
+    display: flex;
+    justify-items: center;
+    gap: 50px;
+    line-height: 80px;
+}
+
+.btn-logo>.ham-btn img {
+    width: 40px;
+    height: 34px;
+}
+
+/* 햄버거메뉴 */
+.btn-logo #menu {
+    display: flex;
+    gap: 50px;
+}
+.gnb-menu{
+    width: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+#menu>li {
+    line-height: 3.8;
+    text-indent: 80px;
+}
+#menu>li:first-child{
+    border-top: 1px solid #ccc;
+}
+#menu>li>a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+    background: url(../images/next_button.png) no-repeat;
+    background-position: 95% center;
+}
+
+#menu .sub{
+    display: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 3;
+    text-indent:100px;
+    text-align: start;
+}
+
+/* #menu>li:hover .sub{
+    display: block;
+} */
+
+
+
+/* footer */
+footer {
+    text-align: center;
+    line-height: 2.5;
+    padding: 100px 0;
+    background-color: #74685c;
+    color: #d7d2cb !important;
+}
+
+
+.foot-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.foot-menu>li {
+    position: relative;
+    padding: 30px 12px;
+}
+
+.foot-menu>li>a {
+    color: #d7d2cb;
+}
+
+/* 세로 줄 */
+
+.foot-menu>li::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 13px;
+    background-color: #d7d2cb;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.foot-menu>li:last-child::after {
+    display: none;
+}
+
+.foot-sns {
+    display: flex;
+    justify-content: center;
+}
+
+/* aside */
+aside {
+    position: fixed;
+    right: 20px;
+    top: 700px;
+}
+
+.quick-wrap>.top img {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,281 @@
+body {
+    background: white;
+}
+
+header {
+    border-bottom: 2px solid rgba(136, 110, 97, 0.5);
+}
+
+.inner {
+    /* background-color: pink; */
+}
+
+
+/* #main-title */
+#main-title {
+    /* background-color: red; */
+    position: relative;
+    height: 500px;
+}
+
+.brand-story>.img-box {
+    padding-top: 100px;
+}
+
+.brand-story>.img-box>img {
+    width: 100%
+}
+
+.brand-story>.text-box {
+    text-align: center;
+    margin-top: -110px;
+    /* position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.brand-story>.text-box>h2 {
+    font-size: 35px;
+    color: #996434;
+    padding-bottom: 15px;
+}
+
+.brand-story>.text-box>p {
+    color: #664a39;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+
+/* #banner */
+.brand-banner {
+    position: relative;
+    /* background-color: aqua; */
+}
+
+.brand-banner>.img-box::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.brand-banner>.img-box {
+    width: 100%;
+    text-align: center;
+}
+
+.brand-banner>.img-box>img {
+    width: 100%;
+}
+
+.brand-banner>.text-box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+.brand-banner>.text-box {
+    /* background-color: red; */
+    padding: 50px 0;
+}
+
+.brand-banner>.text-box::before,
+.brand-banner>.text-box::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.brand-banner>.text-box::before {
+    top: 0;
+}
+
+.brand-banner>.text-box::after {
+    bottom: 0;
+}
+
+
+/* #container */
+/* 공통 */
+.brand,
+.store {
+    padding: 80px 0 0;
+}
+
+.s-title {
+    font-size: 30px;
+    color: #996434;
+    padding-bottom: 30px;
+}
+
+.sub-title {
+    font-size: 25px;
+    color: #664a39;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.sub-title>span {
+    z-index: 10000;
+    position: relative;
+}
+
+.sub-title>img {
+    position: absolute;
+    top: -5px;
+    left: 90px;
+    width: 65px;
+    height: 30px;
+}
+
+.brand>.concept-wrap>p>strong,
+.store>p>strong {
+    font-size: 18px;
+}
+
+
+/* .brand */
+.logo-wrap {
+    padding-bottom: 70px;
+}
+
+.logo-wrap>p,
+.concept-wrap>p {
+    line-height: 1.7;
+    color: #6a6662;
+    font-size: 15px;
+    margin-bottom: 50px;
+    /* font-weight: bold; */
+}
+
+.box-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.box-wrap>.logo-box>.box1,
+.box-wrap>.logo-box>.box2 {
+    border: 1px solid #e1e1e1;
+    padding: 60px 40px;
+    width: 584px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.box-wrap>.logo-box>p {
+    position: absolute;
+    top: 20px;
+    background: #5c4738;
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 14px;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+/* .concept-wrap */
+.color {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.color>.box>.color-box {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.color>.box>.color-box>div {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    /* font-weight: bold; */
+    font-size: 17px
+}
+
+.color>.box>.color-box>div>.code {
+    padding-top: 25px
+}
+
+.pantone {
+    color: white;
+}
+
+.color>.box>.text-box {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.color>.box>.text-box>strong {
+    font-size: 25px;
+    color: #5c4738;
+    display: block;
+    padding-bottom: 25px;
+}
+
+.color>.box>.text-box>p {
+    line-height: 1.2;
+    color: #5c4738;
+    position: relative;
+}
+
+.color>.box>.text-box>p::before,
+.color>.box>.text-box>p::after {
+    content: "";
+    width: 2px;
+    height: 55px;
+    background: #5c4738;
+    display: block;
+    position: absolute;
+    top: -10px;
+}
+
+.color>.box>.text-box>p::before {
+    left: 5px;
+}
+
+.color>.box>.text-box>p::after {
+    right: 5px;
+}
+
+
+/* .store */
+.store {
+    /* background-color: pink; */
+    margin-bottom: 70px;
+}
+
+.store>p {
+    line-height: 1.7;
+    color: #6a6662;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.store>.store-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+}
