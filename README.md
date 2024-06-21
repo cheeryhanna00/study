@@ -7,15 +7,12 @@
 <ul>
   <li>결측치 제거</li>
   <li>배정번호 제거</li>
-  <li>평균, 표준편차</li>
-  <li></li>
+  <li>X 변수들은 시계열 데이터지만 Y 변수는 배정번호 별 데이터로 되어있기 때문에 X 변수들의 배정번호별 통계값 산출이 필요해 평균, 표준편차를 이용</li>
 </ul>
 
 ### RandomForest
 
 ### XGBoost
-<ul>
-  <li></li>
-</ul>
+
 
 데이터셋 출처 : 중소벤처기업부, Korea AI Manufacturing Platform(KAMP), 열처리 품질보증 AI 데이터셋, 스마트제조혁신추진단(㈜임픽스), 2022.12.23., www.kamp-ai.kr
