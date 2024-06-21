@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트윙클팝</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/respond.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- js -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/slick.min.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="head inner">
+            <div class="l_header">
+                <p class="ham"><a href="#void"><img src="./img/ham.png" alt="햄버거버튼"></a></p>
+                <div class="shop">
+                    <p><a href="#void">SHOP</a></p>
+                    <p><a href="#void">EVENT</a></p>
+                    <div class="community">
+                        <p><a href="#void">COMMUNITY</a></p>
+                        <ul class="depth1">
+                            <li><a href="#void">공지사항</a></li>
+                            <li><a href="#void">FAQ</a></li>
+                            <li><a href="#void">1:1 문의</a></li>
+                            <li><a href="#void">리뷰</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="m">
+                    <a class="m-x" href="#void"><img src="./img/m-x.png" alt="닫기"></a>
+                    <ul class="m-shop">
+                        <li><a href="#void">SHOP</a></li>
+                        <li><a href="#void">EVENT</a></li>
+                        <li class="m-community">
+                            <div>
+                                <p class="m-community-p"><a href="#void">COMMUNITY</a></p>
+                                <a href="#void"><img src="./img/m-community_arrow.png" alt="아래 화살표"></a>
+                            </div>
+                            <ul class="m-depth">
+                                <li><a href="#void">-&nbsp;&nbsp;공지사항</a></li>
+                                <li><a href="#void">-&nbsp;&nbsp;FAQ</a></li>
+                                <li><a href="#void">-&nbsp;&nbsp;1:1 문의</a></li>
+                                <li><a href="#void">-&nbsp;&nbsp;리뷰</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="m-lang">
+                        <li class="kr"><a href="#void">KR</a> /&nbsp;</li>
+                        <li class="en"><a href="#void">EN</a> /&nbsp;</li>
+                        <li class="jp"><a href="#void">JP</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo"><a href="#void"><img src="./img/logo.png" alt="트윙클팝 로고"></a></div>
+            <div class="r_header">
+                <ul class="lang">
+                    <li class="kr"><a href="#void">KR</a> /&nbsp;</li>
+                    <li class="en"><a href="#void">EN</a> /&nbsp;</li>
+                    <li class="jp"><a href="#void">JP</a></li>
+                </ul>
+                <div class="icon">
+                    <a href="#void"><img src="./img/search.png" alt="search_icon"></a>
+                    <div class="user">
+                        <a href="#void"><img src="./img/user.png" alt="user_icon"></a>
+                        <ul class="depth2">
+                            <li><a href="#void">로그인</a></li>
+                            <li><a href="#void">회원가입</a></li>
+                            <li><a href="#void">주문조회</a></li>
+                            <li><a href="#void">멤버쉽</a></li>
+                        </ul>
+                    </div>
+                    <a href="#void"><img src="./img/cart.png" alt="cart_icon"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main-banner -->
+    <div class="main-banner">
+        <ul class="m-banner">
+            <li class="banner1">
+                <a href="#void">
+                    <img src="./img/banner-01.jpg" alt="글리터링 아이스틱 배너">
+                </a>
+            </li>
+            <li class="banner2">
+                <a href="#void">
+                    <img src="./img/banner-02.jpg" alt="펄 그라데이션 올 오버 팔레트 배너">
+                </a>
+            </li>
+        </ul>
+        <!-- <ul class="pager">
+            <li class="active"><a href="#void"></a></li>
+            <li><a href="#void"></a></li>
+        </ul> -->
+    </div>
+
+    <div class="mobile-main-banner">
+        <ul class="mobile-m-banner">
+            <li class="banner1">
+                <a href="#void">
+                    <img src="./img/banner-01.jpg" alt="글리터링 아이스틱 배너">
+                </a>
+            </li>
+            <li class="banner2">
+                <a href="#void">
+                    <img src="./img/banner-02.jpg" alt="펄 그라데이션 올 오버 팔레트 배너">
+                </a>
+            </li>
+        </ul>
+        <!-- <ul class="m-pager">
+            <li class="active"><a href="#void"></a></li>
+            <li><a href="#void"></a></li>
+        </ul> -->
+    </div>
+
+    <!-- #container -->
+    <div id="container">
+        <div class="best-seller inner">
+            <h2>BEST SELLER</h2>
+            <div>
+                <div class="item">
+                    <ul>
+                        <li class="item-01">
+                            <a href="#void">
+                                <img src="./img/All_02.gif" alt="best-seller_01번그림">
+                                <div class="text">
+                                    <p>[NEW컬러/1+1]글리터링 아이스틱</p>
+                                    <strong>13,800</strong>
+                                    <div class="event">
+                                        <strong>1+1</strong>
+                                        <strong>NEW</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-02">
+                            <a href="#void">
+                                <img src="./img/All_01.gif" alt="best-seller_02번그림">
+                                <div class="text">
+                                    <p>펄그라데이션 올오버 팔레트</p>
+                                    <div class="price">
+                                        <strong>6,900</strong>
+                                        <strong>15,900</strong>
+                                        <strong>57%</strong>
+                                    </div>
+                                    <strong>온라인단독</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-03">
+                            <a href="#void">
+                                <img src="./img/All_03.gif" alt="best-seller__03번그림">
+                                <div class="text">
+                                    <p>[NEW컬러]글리터링 아이스틱</p>
+                                    <strong>6,900</strong>
+                                    <strong>NEW</strong>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="item-04">
+                            <a href="#void">
+                                <img src="./img/All_04.gif" alt="best-seller__04번그림">
+                                <div class="text">
+                                    <p>[단독구성] 글리터링 아이스틱<br>
+                                        +펄플렉스 글리터 아이팔레트</p>
+                                    <div class="price">
+                                        <strong>12,800</strong>
+                                        <strong>16,800</strong>
+                                        <strong>24%</strong>
+                                    </div>
+                                    <strong>온라인단독</strong>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-05">
+                            <a href="#void">
+                                <img src="./img/All_05.gif" alt="best-seller__05번그림">
+                                <div class="text">
+                                    <p>[단독구성] 글리터링 아이스틱<br>
+                                        +펄그라데이션 올오버 팔레트</p>
+                                    <div class="price">
+                                        <strong>16,900</strong>
+                                        <strong>22,800</strong>
+                                        <strong>26%</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="MD">
+            <h2>MD's Pick</h2>
+            <div class="MD-pick inner">
+                <a href="#void">
+                    <img src="./img/pick_01.png" alt="MD's Pick 01">
+                    <div class="md-right">
+                        <div class="text">
+                            <img src="./img/twinkle.png" alt="logo">
+                            <p>맑음 영롱 분위기 조장,</p>
+                            <h2>페이스 플래쉬 팔레트</h2>
+                            <p>꿀 조합 입체 페이스 연출<br>#사방반짝윤곽연출 #멀티플래쉬 #맑음 레이어링</p>
+                        </div>
+                        <div class="palette">
+                            <img src="./img/pick_01.png" alt="MD's Pick 01">
+                            <div class="pick">
+                                <div class="pick-01">
+                                    <img src="./img/pick_02.png" alt="MD's Pick 02">
+                                    <div class="text-box">
+                                        <p>페이스 플래쉬 팔레트</p>
+                                        <h2>#01 Oh! Coral-Full</h2>
+                                        <div class="price">
+                                            <div class="price2">
+                                                <p>12,900원</p>
+                                                <p>20%</p>
+                                            </div>
+                                            <p>10,300원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pick-02"><img src="./img/pick_03.png" alt="MD's Pick 03">
+                                    <div class="text-box">
+                                        <p>페이스 플래쉬 팔레트</p>
+                                        <h2>#02 Oh! Pink-Full</h2>
+                                        <div class="price">
+                                            <div class="price2">
+                                                <p>12,900원</p>
+                                                <p>20%</p>
+                                            </div>
+                                            <p>10,300원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="all inner">
+            <h2>ALL</h2>
+            <div class="text">
+                <p>전체(8)</p>
+                <select>
+                    <option value="판매인기순">판매인기순</option>
+                    <option value="최근등록순">최근등록순</option>
+                    <option value="낮은가격순">낮은가격순</option>
+                    <option value="높은가격순">높은가격순</option>
+                </select>
+            </div>
+            <div class="item-div">
+                <div class="item">
+                    <ul>
+                        <li class="item-01">
+                            <a href="#void">
+                                <img src="./img/All_01.gif" alt="ALL_01번그림">
+                                <div class="text">
+                                    <p>펄그라데이션 올오버 팔레트</p>
+                                    <div class="price">
+                                        <strong>6,900</strong>
+                                        <strong>15,900</strong>
+                                        <strong>57%</strong>
+                                    </div>
+                                    <strong>온라인단독</strong>
+
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-02">
+                            <a href="#void">
+                                <img src="./img/All_02.gif" alt="ALL_02번그림">
+                                <div class="text">
+                                    <p>[NEW컬러/1+1]글리터링 아이스틱</p>
+                                    <strong>13,800</strong>
+                                    <div class="event">
+                                        <strong>1+1</strong>
+                                        <strong>NEW</strong>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-03">
+                            <a href="#void">
+                                <img src="./img/All_03.gif" alt="ALL_03번그림">
+                                <div class="text">
+                                    <p>[NEW컬러]글리터링 아이스틱</p>
+                                    <strong>6,900</strong>
+                                    <strong>NEW</strong>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="item-04">
+                            <a href="#void">
+                                <img src="./img/All_04.gif" alt="ALL_04번그림">
+                                <div class="text">
+                                    <p>[단독구성] 글리터링 아이스틱<br>
+                                        +펄플렉스 글리터 아이팔레트</p>
+                                    <div class="price">
+                                        <strong>12,800</strong>
+                                        <strong>16,800</strong>
+                                        <strong>24%</strong>
+                                    </div>
+                                    <strong>온라인단독</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item-05">
+                            <a href="#void">
+                                <img src="./img/All_05.gif" alt="ALL_05번그림">
+                                <div class="text">
+                                    <p>[단독구성] 글리터링 아이스틱<br>
+                                        +펄그라데이션 올오버 팔레트</p>
+                                    <div class="price">
+                                        <strong>16,900</strong>
+                                        <strong>22,800</strong>
+                                        <strong>26%</strong>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#void">
+            <p class="view">View More</p>
+        </a>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="foot inner">
+            <section class="left">
+                <h2 class="blind">shop</h2>
+                <ul class="market">
+                    <li><a href="#void">클리오</a></li>
+                    <li><a href="#void">페리페라</a></li>
+                    <li><a href="#void">구달</a></li>
+                    <li><a href="#void">더마토리</a></li>
+                    <li><a href="#void">힐링버드</a></li>
+                    <li><a href="#void">트윙클팝</a></li>
+                    <li><a href="#void">타입넘버</a></li>
+                    <li><a href="#void">알파비</a></li>
+                    <li><a href="#void">트루알엑스</a></li>
+                </ul>
+                <div class="introduce">
+                    <ul>
+                        <li><a href="#void">회사소개</a></li>
+                        <li><a href="#void">개인정보 처리방침</a></li>
+                        <li><a href="#void">웹 사이트 이용 약관</a></li>
+                        <li><a href="#void">이메일무단수집거부</a></li>
+                    </ul>
+                    <select>
+                        <option>패밀리 브랜드</option>
+                        <option>클리오</option>
+                        <option>페리페라</option>
+                        <option>구달</option>
+                        <option>힐링버드</option>
+                        <option>더마토리</option>
+                        <option>트루알엑스</option>
+                    </select>
+                </div>
+                <div class="company">
+                    <h3>(주)클리오</h3>
+                    <p>사업자등록번호 : 211-86-22189 대표 : 한현옥</p>
+                    <p>통신판매업신고번호 : 제 2020-서울성동-00339호<span><a href="#void">사업자정보확인</a></span></p>
+                    <p>개인정보담당자 : 이연재 팀장</p>
+                    <p>본사 : 서울 성동구 왕십리로 66 (성수동1가)</p>
+                    <p>COPYRIGHT ⓒ 2022 <span>CLUBCLIO</span>.co.ltd. ALL RIGHTS RESERVED.</p>
+                </div>
+            </section>
+            <section class="right">
+                <h2 class="blind">sns</h2>
+                <ul class="sns">
+                    <li><a href="#void">Facebook</a></li>
+                    <li><a href="#void">Instagram</a></li>
+                    <li><a href="#void">Youtube</a></li>
+                </ul>
+                <div class="call">
+                    <p><a href="#void">고객센터</a><span>080-080-1510</span></p>
+                    <p>평일 : 10시 ~ 17시</p>
+                    <p>점심시간 : 12시 30분 ~ 13시 30분</p>
+                    <p>주말/공휴일 휴무</p>
+                </div>
+                <p class="line"></p>
+                <div class="brand">
+                    <p>제휴/마케팅 : <span class="brand-list"><a href="#void">담당부서 확인하기</a></span></p>
+                    <div class="depth3">
+                        <ul>
+                            <li><a href="#void">클리오 : </a>byj0204@clio.co.kr</li>
+                            <li><a href="#void">페리페라 : </a>hj_kim1127@clio.co.kr</li>
+                            <li><a href="#void">구달 : </a>jhlee@clio.co.kr</li>
+                            <li><a href="#void">더마토리 : </a>hnlee@clio.co.kr</li>
+                            <li><a href="#void">트윙클팝 / 타입넘버 : </a>ash0457@clio.co.kr</li>
+                            <li><a href="#void">힐링버드 / 에이블랙 : </a>jnhan@clio.co.kr</li>
+                            <li><a href="#void">트루알엑스 : </a>hrhwang5601@clio.co.kr</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="IR">IR : <a href="#void">clioir@clio.co.kr</a></p>
+                <div class="world">
+                    <p>해외수출 : <span class="brand-list2"><a href="#void">담당부서 확인하기</a></span></p>
+                    <ul class="depth4">
+                        <li>해외수출(중국 외) : <a href="#void">clio.overseas1@gmail.com</a></li>
+                        <li>해외수출(중국) : <a href="#void">ebcha1208@clio.co.kr</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <!-- aside -->
+    <aside>
+        <a href="#" class="btn-top"><img src="./img/top_arrow.png" alt="위로가기"></a>
+        <a href="#void" class="chat-bot-img"><img src="./img/chatbot_pc.gif" alt="챗봇"></a>
+        <div class="chat-bot">
+            <a class="close" href="#void"><img src="./img/x.png" alt="x버튼"></a>
+            <p>트윙클팝 상담 챗봇입니다!</p>
+        </div>
+    </aside>
+</body>
+
+</html>
